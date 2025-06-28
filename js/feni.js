@@ -29,6 +29,7 @@ document.getElementById('donate-feni').addEventListener('click', function () {
     const newMainBalance = mainBalance - feniDonation;
     document.getElementById('main-balance').innerText = newMainBalance;
     document.getElementById('my_modal_1').showModal();
+    localStorage.setItem('mainBalance',newMainBalance);
 
     const now = new Date();
     const formattedDate = now.toString();

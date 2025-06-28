@@ -33,6 +33,7 @@ if(donationAmount <= 0)
     const newMainBalance = mainBalance - donationAmount;
     document.getElementById('main-balance').innerText = newMainBalance;
     document.getElementById('my_modal_1').showModal();
+    localStorage.setItem('mainBalance', newMainBalance);                                                                                                                                               
    
 
     const now = new Date();

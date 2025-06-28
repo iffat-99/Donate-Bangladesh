@@ -29,6 +29,8 @@ document.getElementById('donate-quota').addEventListener('click', function () {
     const newMainBalance = mainBalance - quoataDonation;
     document.getElementById('main-balance').innerText = newMainBalance;
     document.getElementById("my_modal_1").showModal();
+    localStorage.setItem('mainBalance',newMainBalance);
+   
 
     const now = new Date();
     const formattedDate = now.toString();

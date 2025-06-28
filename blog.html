@@ -71,7 +71,17 @@
   <div class="collapse-title font-semibold">How do you manipulate an element's attribute and style using the DOM?</div>
   <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
 </div>
+
         <script src="./js/home.js"></script>
+      
+
+<script>
+  const savedBalance = localStorage.getItem('mainBalance');
+  if (savedBalance !== null) {
+    document.getElementById('main-balance').innerText = savedBalance;
+  }
+</script>
+
     </main>
 </body>
 </html>
